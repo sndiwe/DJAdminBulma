@@ -10,14 +10,12 @@ const Menu =  [
     title: 'Chat',
     group: 'apps',
     icon: 'chat_bubble',
-    target: '_blank',
     name: 'Chat',
   },
   {
     title: 'Inbox',
     group: 'apps',
     name: 'Mail',
-    target: '_blank',
     icon: 'email',
   },
   {

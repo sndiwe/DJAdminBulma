@@ -1,27 +1,56 @@
 <template>
-  <v-app id="404">
-      <v-container fluid fill-height>
-        <v-layout align-center justify-center row>
-          <div class="mr-3 hidden-sm-and-down">
-            <img src="/static/error/500.svg" alt="">
-          </div>
-          <div class="text-md-center">
-            <h1>500</h1>
-            <h2 class="my-3 headline ">Sorry, Page In Progress.</h2>
-            <div>
-              <v-btn color="primary" @click="goHome">Go Home</v-btn>
-            </div>  
-          </div>
-        </v-layout>
-      </v-container>
+  <v-app>
+        <v-tabs icons-and-text centered dark color="cyan" @change="testIt">
+        <v-tabs-slider color="black"></v-tabs-slider>
+        <v-tab href="#tab-1">
+            New
+            <v-icon>create_new_folder</v-icon>
+        </v-tab>
+        <v-tab href="#tab-2">
+            Existing
+            <v-icon>edit</v-icon>
+        </v-tab>
+        <v-tab href="#tab-3">
+            Future
+            <v-icon>date_range</v-icon>
+        </v-tab>
+        <v-tab-item 
+                  v-for="i in 3"
+                  :key="i"
+                  :id="'tab-' + i"
+                >
+                  <v-card flat >
+                    <v-card-text><create-log></create-log></v-card-text>
+                  </v-card>
+                </v-tab-item>
+        </v-tabs>    
   </v-app>
 </template>
 
 <script>
-export default {
+import createLog from '@/components/createLog';
+import editLog from '@/components/editLog';
+import futureLog from '@/components/futureLog';
+export default { 
+  components: {
+    createLog,
+    editLog,
+    futureLog
+  },
+  data () {
+    return {
+      myComponent: createLog
+    };
+  },
   methods: {
     goHome () {
       this.$router.push({ path: '/' });
+    },
+    testClick () {
+      console.log('Click');
+    },
+    testIt () {
+      console.log('here');
     }
   }
 };
