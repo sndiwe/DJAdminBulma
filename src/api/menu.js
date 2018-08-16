@@ -37,6 +37,12 @@ const Menu =  [
     group: 'apps',
     name: 'CommunityService',
     icon: 'school',
+  },
+  {
+    title: 'Fitness',
+    group: 'apps',
+    name: 'Fitness',
+    icon: 'fitness_center',
   }
 
   // {

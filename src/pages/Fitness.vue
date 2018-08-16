@@ -6,8 +6,8 @@
             <img src="/static/error/500.svg" alt="">
           </div>
           <div class="text-md-center">
-            <h1>500</h1>
-            <h2 class="my-3 headline ">Sorry, Page In Progress.</h2>
+            <h1>Eww</h1>
+            <h2 class="my-3 headline ">Sorry, Page In Progress</h2>
             <div>
               <v-btn color="primary" @click="goHome">Go Home</v-btn>
             </div>  

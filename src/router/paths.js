@@ -97,6 +97,16 @@ export default [
     )
   },
   {
+    path: '/fitness',
+    meta: { breadcrumb: true },
+    name: 'Fitness',
+    component: (a) => import(
+      /* webpackChunkName: "routes" */
+      /* webpackMode: "lazy-once" */
+      `@/pages/Fitness.vue`
+    )
+  },
+  {
     path: '/media',
     meta: { },
     name: 'Media',
