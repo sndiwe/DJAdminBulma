@@ -76,16 +76,26 @@ export default [
     )
   },
 
-  // {
-  //   path: '/calendar',
-  //   meta: { breadcrumb: true },
-  //   name: 'Calendar',
-  //   component: (a) => import(
-  //     /* webpackChunkName: "routes" */
-  //     /* webpackMode: "lazy-once" */
-  //     `@/pages/Calendar.vue`
-  //   )
-  // },
+  {
+    path: '/calendar',
+    meta: { breadcrumb: true },
+    name: 'Calendar',
+    component: (a) => import(
+      /* webpackChunkName: "routes" */
+      /* webpackMode: "lazy-once" */
+      `@/pages/Calendar.vue`
+    )
+  },
+  {
+    path: '/communityservice',
+    meta: { breadcrumb: true },
+    name: 'CommunityService',
+    component: (a) => import(
+      /* webpackChunkName: "routes" */
+      /* webpackMode: "lazy-once" */
+      `@/pages/CommunityService.vue`
+    )
+  },
   {
     path: '/media',
     meta: { },
