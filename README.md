@@ -32,7 +32,6 @@ Vuetify is Awesome.
 └── .gitignore
 
 ### Build Setup
-
 ``` bash
 # install dependencies
 npm install
