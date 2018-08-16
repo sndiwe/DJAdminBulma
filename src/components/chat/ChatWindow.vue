@@ -7,11 +7,11 @@
       </v-btn>
       <template v-if="chat.users">
         <v-avatar size="32" class="avatar-stack" v-for="(user_id,index) in chat.users" :key="index">
-          <img :src="getAvatar(user_id)" alt="">
+          <img src="../../assets/djFace.png" alt="">
         </v-avatar>  
       </template>
       <v-spacer></v-spacer>
-      <v-toolbar-title> <h4>Chat Channel</h4></v-toolbar-title>
+      <v-toolbar-title> <h4>The Tea</h4></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-tooltip bottom>
         <v-btn icon slot="activator">

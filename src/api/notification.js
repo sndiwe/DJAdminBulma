@@ -1,28 +1,28 @@
 export default [
   {
-    title: 'New user registered',
-    color: 'light-green',
-    icon: 'account_circle',
+    title: 'Missed Call ',
+    color: 'red',
+    icon: 'phone',
     timeLabel: 'Just now'
   },
   { divider: true, inset: true },
   {
     title: 'New order received',
     color: 'light-blue',
-    icon: 'shopping_cart',
+    icon: 'add_shopping_cart',
     timeLabel: '2 min ago'
   },
   { divider: true, inset: true },
   {
-    title: 'New payment made',
+    title: 'Paid Mortgage',
     color: 'cyan',
     icon: 'payment',
     timeLabel: '24 min ago'
   },
   { divider: true, inset: true },
   {
-    title: 'New message from Michael',
-    color: 'red',
+    title: 'New Email',
+    color: 'green',
     icon: 'email',
     timeLabel: '1 hour ago'
   }
